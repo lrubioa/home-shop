@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>e commerce home</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #title {
+            background-color: #cde990;
+            text-align: center;
+            margin: 0;
+
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        #naviBar {
+            background-color: #aacb73;
+            text-align: center;
+
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+            width: 100%;
+            top: 0;
+            position: -webkit-sticky;
+            position: sticky;
+
+            z-index: 999;
+        }
+
+        #list {
+            margin: 0;
+        }
+
+        #l1,
+        #l2,
+        #l3,
+        #l4 {
+            margin-left: 5px;
+            margin-right: 5px;
+
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        #l1:hover,
+        #l2:hover,
+        #l3:hover,
+        #l4:hover {
+            background-color: #cde990;
+            border-radius: 5px;
+        }
+
+
+        #midImg {
+            /* height: 600px; */
+            background-color: #ffffe8;
+        }
+
+        #img1,
+        #img2,
+        #img3 {
+            filter: blur(2px);
+            filter: opacity(50%);
+        }
+
+
+        #shopNow {
+            background-color: #ffd4d4;
+            text-align: center;
+
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        #shopArea {
+            background-color: #fabec0;
+            height: 1000px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            border-bottom: #cde990 dashed 4px;
+        }
+
+        .shopBox {
+            width: 30%;
+            height: 45%;
+            background-color: #ffffe8;
+
+            border-radius: 10px;
+        }
+
+        .shopBox>img {
+            border-radius: 10px;
+        }
+
+        .shopBox>img:hover {
+            filter: brightness(50%);
+        }
+
+        #shopPing {
+            background-image: url(/images-s2/daisiesQ.jpg);
+            justify-content: center;
+            align-content: center;
+
+            filter: brightness(40%);
+        }
+
+        #toShop{
+            color: white;
+            z-index: 9999999999999999999999999;
+        }
+
+
+        #miniAbout {
+            /*height: 300px;*/
+            background-color: #ffffe8;
+
+            border-bottom: #aacb73 dashed 4px;
+        }
+
+        #aboutUs {
+            text-align: center;
+
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        #miniContact {
+            /*height: 300px;*/
+            background-color: #ffd4d4;
+
+            border-bottom: #ffffe8 dashed 4px;
+        }
+
+        #contactUs {
+            width: 75%;
+            margin-left: 20%;
+            padding-top: 2%;
+        }
+
+        #redirectContact {
+            width: initial;
+            margin-right: 15%;
+            text-align: right;
+            padding-bottom: 2%;
+        }
+
+
+
+        #footer-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #footer1 {
+            background-color: #aacb73;
+            width: 25%;
+            height: 200px;
+
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        #footer2 {
+            background-color: #cde990;
+            width: 75%;
+            height: 200px;
+
+            padding-left: 2%;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title" class="h1"><a href="#title" class="text-decoration-none text-dark">ambrotos</a></div>
+
+    <nav id="naviBar">
+        <ul id="list" class="list-inline">
+            <li id="l1" class="list-inline-item"><a href="#title" class="text-decoration-none text-dark">Home</a></li>
+            <li id="l2" class="list-inline-item"><a href="/ecommerce/shop.html"
+                    class="text-decoration-none text-dark">Shop</a></li>
+            <li id="l3" class="list-inline-item"><a href="/ecommerce/about.html"
+                    class="text-decoration-none text-dark">About</a></li>
+            <li id="l4" class="list-inline-item"><a href="/ecommerce/contact.html"
+                    class="text-decoration-none text-dark">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="midImg">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="img1" src="/images-s2/gypsophilaig.png" class="d-block w-100" alt="Multiple small flowers">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Choose,</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="img2" src="/images-s2/florist.png" class="d-block w-100" alt="Florist shaping flowers">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Shape,</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="img3" src="/images-s2/flowers-V2.png" class="d-block w-100"
+                        alt="Multiple vases containing flowers">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark">Create.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="shopNow" class="fs-4"><a href="/ecommerce/shop.html" class="text-decoration-none text-dark">Shop
+            Now</a></div>
+
+    <div id="shopArea">
+        <div class="shopBox"><img src="/images-s2/roses.png" alt="Assortment of flowers 1" class="align-middle"
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="shopBox"><img src="/images-s2/bouquet2.png" alt="Assortment of flowers 2" class="align-middle"
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="shopBox"><img src="/images-s2/pretty.jpg" alt="Assortment of flowers 3" class="align-middle"
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="shopBox"><img src="/images-s2/IMG_0915.jpg" alt="Assortment of flowers 4" class="align-middle"
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div class="shopBox"><img src="/images-s2/IMG_1462.jpg" alt="Assortment of flowers 5" class="align-middle"
+                style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div id="shopPing" class="shopBox text-center"><a id="toShop" href="/ecommerce/shop.html"
+                class="fs-1 text-decoration-none">Shop More</a></div>
+    </div>
+
+    <div id="miniAbout">
+        <p id="aboutUs" class="display-4">Want to get to know us? Learn more about us <a
+                href="/ecommerce/about.html" class="text-decoration-none">here!</a></p>
+    </div>
+
+    <div id="miniContact">
+        <p id="contactUs" class="display-2">Have a question? <br> We'd love to help!</p>
+
+        <p id="redirectContact" class="fs-2">Send us a message <a href="/ecommerce/contact.html"
+                class="text-decoration-none">here!</a>
+        </p>
+    </div>
+
+
+    <div id="footer-container">
+        <div id="footer1">
+            6997 N Glen Harbor Blvd, Glendale, AZ 85307
+        </div>
+
+        <div id="footer2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus aspernatur, odit minus totam
+            numquam, labore tempore beatae, reiciendis ad odio nisi sequi soluta! Tempora perspiciatis hic quos
+            saepe
+            dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, adipisci similique eos pariatur
+            porro minima iure a ullam aperiam reiciendis praesentium! Labore recusandae reiciendis mollitia
+            asperiores a
+            aut ducimus deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quod. Aut
+            exercitationem necessitatibus dicta consectetur error natus, quam magnam voluptatem libero? Fuga
+            repudiandae
+            doloremque modi nobis incidunt laudantium est veniam.
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
